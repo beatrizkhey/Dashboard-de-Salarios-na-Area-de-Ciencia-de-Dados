@@ -1,0 +1,33 @@
+name: CI - Dashboard Streamlit
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Clonar repositório
+        uses: actions/checkout@v3
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: 📦 Instalar dependências
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: ✅ Testar inicialização do Streamlit
+        run: |
+          source venv/bin/activate
+          streamlit run app.py --server.headless true &
+          sleep 10
+          echo "✅ Streamlit iniciou com sucesso!"
