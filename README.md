@@ -86,7 +86,7 @@ O dashboard já está publicado no **Streamlit Cloud**.
 ![Proporção dos Tipos de Trabalho](images/proporcao_tipos_trabalho.png)
 
 ### Salário Médio de Cientista de Dados por País
-<img src="images/salario_medio_pais.png" alt="Mapa de salários" width="600"/>
+![Dados Detalhados](images/salario_medio_pais.png)
 
 ### Dados Detalhados
 ![Dados Detalhados](images/dados_detalhados.png)
