@@ -21,7 +21,16 @@ Certifique-se de ter instalado:
 
 ---
 
-## ⚙️ Instalação e execução
+## 🚀 Como acessar o Dashboard
+
+Você tem duas opções:
+
+### 🔹 1. Acessar online
+
+O dashboard já está publicado no **Streamlit Cloud**.  
+👉 [Acesse aqui](https://dashboard-salarios-area-ciencia-de-dados.streamlit.app/)
+
+### 🔹 2. Instalação e execução local
 
 1. Clone este repositório ou baixe os arquivos:
    ```bash
@@ -61,12 +70,15 @@ Certifique-se de ter instalado:
 
 ---
 
-📦 Dependências
-- pandas
-- streamlit
-- plotly
-- seaborn
+## 🛠️ Tecnologias Utilizadas
+- [Python](https://www.python.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Streamlit](https://streamlit.io/)
+- [Plotly](https://plotly.com/python/)
+- [Seaborn](https://seaborn.pydata.org/)
 
-👩‍💻 Autor
+---
 
-Desenvolvido por Beatriz Khey ✨
+## 👩‍💻 Autor
+
+Desenvolvido por [Beatriz Khey](https://github.com/beatrizkhey) ✨
