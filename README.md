@@ -1,6 +1,6 @@
 # 📊 Dashboard de Salários na Área de Dados
 
-Este projeto é um **dashboard interativo** construído com [Streamlit](https://streamlit.io/), [Pandas](https://pandas.pydata.org/) e [Plotly](https://plotly.com/python/).  
+Este projeto é um **dashboard interativo** construído com [Streamlit](https://streamlit.io/), [Pandas](https://pandas.pydata.org/), [Plotly](https://plotly.com/python/) e [Seaborn](https://seaborn.pydata.org/).  
 O objetivo é explorar e visualizar dados salariais da área de dados nos últimos anos.
 
 ---
@@ -34,8 +34,8 @@ O dashboard já está publicado no **Streamlit Cloud**.
 
 1. Clone este repositório ou baixe os arquivos:
    ```bash
-   git clone https://github.com/seu-usuario/dashboard-salarios.git
-   cd dashboard-salarios
+   git clone https://github.com/beatrizkhey/Dashboard-de-Salarios-na-Area-de-Ciencia-de-Dados.git
+   cd Dashboard-de-Salarios-na-Area-de-Ciencia-de-Dados
    ```
 
 2. Crie um ambiente virtual (venv):

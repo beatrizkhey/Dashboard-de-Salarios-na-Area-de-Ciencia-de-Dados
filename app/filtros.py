@@ -10,15 +10,15 @@ def aplicar_filtros(df: pd.DataFrame) -> pd.DataFrame:
 
     # Filtro de Senioridade
     senioridades_disponiveis = sorted(df['senioridade'].unique())
-    senioridades_selecionadas = st.sidebar.multiselect('Senioridade', senioridades_disponiveis)
+    senioridades_selecionadas = st.sidebar.multiselect('Senioridade', senioridades_disponiveis, default=senioridades_disponiveis)
 
     # Filtro por Tipo de Contrato
     contratos_disponiveis = sorted(df['contrato'].unique())
-    contratos_selecionados = st.sidebar.multiselect('Tipo de Contrato', contratos_disponiveis)
+    contratos_selecionados = st.sidebar.multiselect('Tipo de Contrato', contratos_disponiveis, default=contratos_disponiveis)
 
     # Filtro por Tamanho da Empresa
     tamanhos_disponiveis = sorted(df['tamanho_empresa'].unique())
-    tamanhos_selecionados = st.sidebar.multiselect('Tamanho da Empresa', tamanhos_disponiveis)
+    tamanhos_selecionados = st.sidebar.multiselect('Tamanho da Empresa', tamanhos_disponiveis, default=tamanhos_disponiveis)
 
     # ---- Filragem do DataFrame ----
     # O dataframe principal é filtrado com base nas seleções feitas na barra lateral
