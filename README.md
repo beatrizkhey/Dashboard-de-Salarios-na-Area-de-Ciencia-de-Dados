@@ -70,6 +70,29 @@ O dashboard já está publicado no **Streamlit Cloud**.
 
 ---
 
+## 📊 Exemplos do Dashboard
+
+### Visão Geral
+![Visão Geral](images/visao_geral.png)
+![Visão Geral](images/visao_geral_2.png)
+
+### Top 10 Cargos por Salário Médio Anual
+![Top 10 cargos por salário](images/top_10_salarios.png)
+
+### Distribuição de Salários Anuais
+![Distribuição de Salários Anuais](images/distribuicao_salarios.png)
+
+### Proporção dos Tipos de Trabalho
+![Proporção dos Tipos de Trabalho](images/proporcao_tipos_trabalho.png)
+
+### Salário Médio de Cientista de Dados por País
+<img src="images/salario_medio_pais.png" alt="Mapa de salários" width="600"/>
+
+### Dados Detalhados
+![Dados Detalhados](images/dados_detalhados.png)
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 - [Python](https://www.python.org/)
 - [Pandas](https://pandas.pydata.org/)
