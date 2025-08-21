@@ -1,6 +1,14 @@
 import pandas as pd
+import pycountry
 
-def carregar_dados(caminho: str = "data/dados-imersao.csv") -> pd.DataFrame:
+# Conversão do código de país de ISO2 para ISO3
+def iso2_to_iso3(code):
+  try:
+    return pycountry.countries.get(alpha_2=code).alpha_3
+  except:
+    return None
+
+def carregar_dados(caminho: str = 'data/dados-imersao.csv') -> pd.DataFrame:
     df = pd.read_csv(caminho)
     return df
 
@@ -26,8 +34,10 @@ def preparar_dados(df: pd.DataFrame) -> pd.DataFrame:
     df['contrato'] = df['contrato'].replace({'FT': 'Tempo Integral','PT': 'Tempo Parcial','FL': 'Freelancer','CT': 'Contrato Temporário'})
     df['tamanho_empresa'] = df['tamanho_empresa'].replace({'S': 'Pequena','M': 'Média','L': 'Grande'})
     df['remoto'] = df['remoto'].replace({0: 'Presencial',50: 'Híbrido',100: 'Remoto'})
+    df['residencia_iso3'] = df['residencia'].apply(iso2_to_iso3)
 
     # Limpeza
     df = df.dropna()
-    df = df.assign(ano=df['ano'].astype("Int64"))
+    df = df.assign(ano=df['ano'].astype('Int64'))
     return df
+
